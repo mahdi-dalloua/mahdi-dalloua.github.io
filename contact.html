@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>contact — Mahdi Dalloua</title>
+  <style>
+    :root { --maxw: 720px; }
+
+    /* reset & base */
+    html,body { height: 100%; margin: 0; font-family: serif; color: #111; background: #fff; }
+    
+    /* center container so content is never clipped at zoom */
+    .container {
+      min-height: 100vh;                 /* full viewport height */
+      display: flex;
+      align-items: center;               /* vertical centering without clipping */
+      justify-content: center;
+      padding: 32px;
+      box-sizing: border-box;
+    }
+
+    .card {
+      max-width: var(--maxw);
+      width: 100%;
+      text-align: center;
+    }
+
+    .lead {
+      margin: 0 0 18px 0;
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    .email {
+      margin: 0;
+      font-style: italic;
+      font-size: 18px;
+      word-break: break-word;            /* prevents overflow at small widths */
+    }
+
+    .note {
+      margin-top: 18px;
+      color: #666;
+      font-style: italic;
+      font-size: 15px;
+    }
+
+    a { color: inherit; text-decoration: underline; }
+
+    /* small screens */
+    @media (max-width: 600px) {
+      .container { padding: 18px; }
+      .lead { font-size: 16px; }
+      .email { font-size: 16px; }
+      .note { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <p class="lead">I'll respond only to messages that match my schedule and interests — thank you.</p>
+
+      <p class="email">
+        <a href="mailto:mahdidalloua1707@gmail.com">mahdidalloua1707@gmail.com</a>
+      </p>
+
+      <p class="note">I do not use social media. Please contact me only via the email above. Any other account claiming to be me is fake.</p>
+    </div>
+  </div>
+</body>
+</html>

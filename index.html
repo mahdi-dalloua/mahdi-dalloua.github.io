@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>MAHDI DALLOUA</title>
+
+<link rel="icon" href="https://jvscholz.com/favicon.ico">
+
+<style>
+body {
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 97%;
+    position: absolute;
+    display: table;
+}
+
+p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#timezone * {
+    text-decoration: none;
+}
+</style>
+
+<script>
+let options = {
+    timeZone: 'Africa/Tunis',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric'
+};
+
+let formatter = new Intl.DateTimeFormat([], options);
+
+setInterval(() => {
+    document.querySelector("#time").innerText =
+        formatter.format(new Date());
+}, 1000);
+</script>
+
+</head>
+
+<body>
+
+<p>
+
+<font size="7"><i><b>MAHDI DALLOUA</b></i></font>
+
+<br><br>
+
+<img src="dreamsofpirateswillneverend !!! .png" style="width:560px;">
+
+<br><br>
+
+<span id="timezone">
+<i>
+<a href="https://24timezones.com/world_directory/current_tunis_time.php">
+TIME IN TUNIS
+</a>
+-
+<span id="time"></span>
+CET
+</i>
+</span>
+
+<br><br>
+
+<a href="about.html">about</a> //
+<a href="https://drive.google.com/drive/folders/1vKiqZs0K162dtqzAyKrT7xm6XVG_8Maz?usp=drive_link">resume</a> //
+<a href="contact.html">contact</a>
+
+<br><br>
+
+</p>
+
+</body>
+</html>
